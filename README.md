@@ -1,0 +1,3 @@
+# Digitalcoin
+
+gradle build
