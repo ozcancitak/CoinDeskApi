@@ -15,7 +15,8 @@ import java.time.LocalDate;
 @SpringBootTest
 public class CurrencyMainServiceTests {
 
-	@Autowired CurrencyMainService currencyMainService;
+	@Autowired
+	CurrencyMainService currencyMainService;
 
 	@Test
 	public void printRatesTest() {

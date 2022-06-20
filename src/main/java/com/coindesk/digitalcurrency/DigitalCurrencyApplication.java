@@ -24,7 +24,7 @@ public class DigitalCurrencyApplication {
     }
 
     @Bean
-    public RestTemplate getRestTemplate(RestTemplateBuilder builder) {
+    public RestTemplate getRestTemplate() {
         RestTemplate restTemplate = new RestTemplate();
         MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
         converter.setSupportedMediaTypes(Collections.singletonList(MediaType.ALL));

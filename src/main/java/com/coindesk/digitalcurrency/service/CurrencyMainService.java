@@ -21,9 +21,7 @@ public class CurrencyMainService {
 
 	private CurrencyRateData currencyRate;
 
-	/*
-	 * expect user input
-	 * */
+
 	public void currencyCodeInput() {
 
 		String repeat = "y";

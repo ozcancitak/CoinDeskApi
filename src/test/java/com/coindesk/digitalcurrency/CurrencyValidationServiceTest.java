@@ -21,7 +21,8 @@ public class CurrencyValidationServiceTest{
     @Value("${validCurrencysUrl}")
     String VALID_CURRENCY_URL;
 
-    @Autowired CurrencyValidationService currencyValidationService;
+    @Autowired
+    CurrencyValidationService currencyValidationService;
 
 
    @Test

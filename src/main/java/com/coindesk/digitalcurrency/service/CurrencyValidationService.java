@@ -22,7 +22,7 @@ public class CurrencyValidationService {
 
     private final RestTemplate restTemplate;
 
-    public boolean validate(String currency, String url) throws IOException {
+    public boolean validate(String currency, String url)  {
 
          List<CurrencyValidData> supportedCurrencyList = new ArrayList<>();
         
@@ -35,7 +35,9 @@ public class CurrencyValidationService {
             supportedCurrencyList = currencyResponse.getBody();
         }
 
-        return supportedCurrencyList.stream().anyMatch(x -> x.getCurrency().equals(currency));
+        return supportedCurrencyList
+                .stream()
+                .anyMatch(x -> x.getCurrency().equals(currency));
 
     }
 }
